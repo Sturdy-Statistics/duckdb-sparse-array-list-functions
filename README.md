@@ -1,4 +1,4 @@
-# DuckDB Sparse Array/List Functions
+# DuckDB Sparse Array & List Functions
 This repo provides a set of useful functions for operating on sparsely stored arrays. This is extremely useful for significantly reducing storage and minorly improving runtime when you have high dimensional sparse (or nearly sparse) arrays. In following with DuckDB's convention, it expects the stored array to be **1-indexed**.
 
 This support index, value style sparse arrays. For example

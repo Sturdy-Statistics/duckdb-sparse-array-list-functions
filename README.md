@@ -3,7 +3,7 @@ This repo provides a set of useful functions for operating on sparsely stored ar
 
 This support index, value style sparse arrays. For example
 
-`[7, 0, 0 ,0, 23] => (5, [1, 5], [1, 23]) 
+`[7, 0, 0 ,0, 23] => (5, [1, 5], [1, 23]) `
 
 This is extremely useful for 100, 500, or 1000+ dimensional arrays that only have a few meaningful values.
 
@@ -12,7 +12,7 @@ This is extremely useful for 100, 500, or 1000+ dimensional arrays that only hav
 
 We migrated our DuckDB arrays to sparse storage in Dec 2024. These are the results of the benchmarks we ran on our internal duckDB files with confidence intervals. 
 
-| Array Dimension | Average Number of Non-Sparse Values | Percent Reduction |
+| Array Dimension | Average Number of Non-Sparse Values | Percent Reduction (+- stddev) |
 |:--|:-------|:---|
 | 96 | 4.3 | 42% +- 12|
 | 192 | 6.7 | 56% +- 7|

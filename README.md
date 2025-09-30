@@ -12,9 +12,8 @@ This is extremely useful for 100, 500, or 1000+ dimensional arrays that only hav
 
 We migrated our DuckDB arrays to sparse storage in Dec 2024. These are the results of the benchmarks we ran on our internal duckDB files with confidence intervals. 
 
-<p align="center">
-![Benchmarks](static/sparse-box-plot)
-</p>
+![Benchmarks](static/sparse-box-plot.png)
+
 
 ## Functions
 | Name | Description |

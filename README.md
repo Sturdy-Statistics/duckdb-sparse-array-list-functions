@@ -12,12 +12,9 @@ This is extremely useful for 100, 500, or 1000+ dimensional arrays that only hav
 
 We migrated our DuckDB arrays to sparse storage in Dec 2024. These are the results of the benchmarks we ran on our internal duckDB files with confidence intervals. 
 
-| Array Dimension | Average Number of Non-Sparse Values | Percent Reduction (+- stddev) |
-|:--|:-------|:---|
-| 96 | 4.3 | 42% +- 12|
-| 192 | 6.7 | 56% +- 7|
-| 512 | 8.1 | 63% +- 21 |
-
+<p align="center">
+![Benchmarks](static/sparse-box-plot)
+</p>
 
 ## Functions
 | Name | Description |
@@ -31,6 +28,7 @@ We migrated our DuckDB arrays to sparse storage in Dec 2024. These are the resul
 
 Visit [our docs](https://sturdystatistics.com/docs/reference/SparseSQL.html) for extended documentation and examples.
 
+Visit our [blog post](https://blog.sturdystatistics.com/posts/sparse_duckdb/) for more context on the benchmarks. 
 
 ## Considerations
 

@@ -8,13 +8,6 @@ This support index, value style sparse arrays. For example
 This is extremely useful for 100, 500, or 1000+ dimensional arrays that only have a few meaningful values.
 
 
-## Benchmarks
-
-We migrated our DuckDB arrays to sparse storage in Dec 2024. These are the results of the benchmarks we ran on our internal duckDB files with confidence intervals. 
-
-![Benchmarks](static/sparse-box-plot.png)
-
-
 ## Functions
 | Name | Description |
 |:--|:-------|
@@ -24,10 +17,17 @@ We migrated our DuckDB arrays to sparse storage in Dec 2024. These are the resul
 | `sparse_to_dense(K, inds, vals)` | Constructs a dense array of size K from sparse inds + vals |
 | `agg_array_sum(arrs)` | Sum a list of arrays of size K. Returns a single array of size K |
 
-
 Visit [our docs](https://sturdystatistics.com/docs/reference/SparseSQL.html) for extended documentation and examples.
 
+## Benchmarks
+
+We migrated our DuckDB arrays to sparse storage in Dec 2024. These are the results of the benchmarks we ran on our internal duckDB files with confidence intervals. 
+
+![Benchmarks](static/sparse-box-plot.png)
+
 Visit our [blog post](https://blog.sturdystatistics.com/posts/sparse_duckdb/) for more context on the benchmarks. 
+
+
 
 ## Considerations
 
